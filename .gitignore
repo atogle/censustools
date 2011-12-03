@@ -1,0 +1,7 @@
+data/*.zip
+data/*.dbf
+data/*.prj
+data/*.shp
+data/*.shp.xml
+data/*.shx
+data/*.html
