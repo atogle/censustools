@@ -4,4 +4,8 @@ data/*.prj
 data/*.shp
 data/*.shp.xml
 data/*.shx
+data/*.qix
 data/*.html
+.env
+.DS_Store
+data_test
