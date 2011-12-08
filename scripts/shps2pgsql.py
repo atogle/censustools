@@ -11,8 +11,8 @@ def parse_args():
   root_dir = os.path.dirname(os.path.realpath(__file__))
   parser = argparse.ArgumentParser()
 
-  parser.add_argument('db')
-  parser.add_argument('table')
+  parser.add_argument('db', help='the name of the existing database')
+  parser.add_argument('table', help='the name of the table to create')
   parser.add_argument('--host', default='localhost', help='defaults to "localhost"')
   parser.add_argument('--port', type=int, default=5432, help='defaults to "5432"')
   parser.add_argument('--schema', default='public', help='defaults to "public"')
