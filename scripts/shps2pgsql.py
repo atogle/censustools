@@ -13,12 +13,12 @@ def parse_args():
 
   parser.add_argument('db')
   parser.add_argument('table')
-  parser.add_argument('--host', dest='host', default='localhost')
-  parser.add_argument('--port', dest='port', type=int, default=5432)
-  parser.add_argument('--schema', dest='schema', default='public')
-  parser.add_argument('--user', dest='user', default='postgres')
-  parser.add_argument('--passwd', dest='passwd', default='')
-  parser.add_argument('--shp_dir', dest='shp_dir', default="%s/../data" % (root_dir, ))
+  parser.add_argument('--host', default='localhost', help='defaults to "localhost"')
+  parser.add_argument('--port', type=int, default=5432, help='defaults to "5432"')
+  parser.add_argument('--schema', default='public', help='defaults to "public"')
+  parser.add_argument('--user', default='postgres', help='defaults to "postgres')
+  parser.add_argument('--passwd', default='', help='defaults to ""')
+  parser.add_argument('--shp_dir', default="%s/../data" % (root_dir, ), help='defaults to "censustools/data"')
 
   return parser.parse_args()
 
